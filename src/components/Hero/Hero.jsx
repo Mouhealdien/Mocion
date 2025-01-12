@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import header from "../../assets/headerimg.svg";
+import header from "../../assets/headerimg.png";
 
 import Experience from "../Experience/Experience";
 
@@ -28,13 +28,15 @@ const Hero = () => {
         loading="lazy"
         src={header}
         sx={{
-          height: { lg: "100%", md: "320px", sm: "85%" },
-          width: {
+          // width: "auto",
+          maxWidth: {
+            lg: "68%",
             md: "65%",
-            sm: "65%",
+            sm: "58%",
             xs: "100%",
           },
-          marginTop: { lg: "3rem", md: "5rem", sm: "36px", xs: "16rem" },
+          objectFit: "contain",
+          marginTop: { lg: "10rem", md: "8rem", sm: "60px", xs: "16rem" },
         }}
       />
     </Box>

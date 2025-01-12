@@ -7,7 +7,7 @@ const Experience = () => {
     <Box
       id="about-us"
       sx={{
-        width: { md: "35%", sm: "30%", xs: "auto" },
+        width: { md: "30%", sm: "30%", xs: "auto" },
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
