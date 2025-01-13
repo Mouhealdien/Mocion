@@ -5,6 +5,8 @@ import Experience from "../Experience/Experience";
 
 import personsign from "../../assets/personsignred.png";
 
+import { slideInTop } from "../../theme/animations";
+
 const Hero = () => {
   return (
     <Box
@@ -28,6 +30,7 @@ const Hero = () => {
         loading="lazy"
         src={header}
         sx={{
+          animation: `${slideInTop} 1.5s ease-out`,
           // width: "auto",
           maxWidth: {
             lg: "68%",

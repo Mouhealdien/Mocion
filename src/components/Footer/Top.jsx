@@ -239,7 +239,7 @@ const Top = () => {
                 InputProps={{
                   style: {
                     color: "#747474",
-                    fontFamily: "'Open Sans', sans-serif",
+                    fontFamily: "'Open Sans', sans-serif !important",
                     fontWeight: 400,
                   },
                   endAdornment: (

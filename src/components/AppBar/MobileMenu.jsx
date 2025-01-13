@@ -7,6 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 
 import colors from "../../theme/colors";
+import { useNavigate } from "react-router-dom";
 
 const MobileMenu = ({
   src,
@@ -17,6 +18,7 @@ const MobileMenu = ({
   handleButtonClick,
 }) => {
   console.log(activeButton);
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -91,6 +93,7 @@ const MobileMenu = ({
 
       <Box sx={{ display: { xs: "flex", sm: "none", md: "none" } }}>
         <Button
+          onClick={() => navigate("/login")}
           fullWidth
           sx={{
             paddingX: "16px",

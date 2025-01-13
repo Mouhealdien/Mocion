@@ -29,8 +29,8 @@ const BenefitsPlayers = () => {
     const baseStyles = {
       position: "sticky",
       top: { sm: `calc(10% + ${id * 25}px)`, xs: "0px" },
-      width: { md: "90%", sm: "90%", xs: "85%" },
-      height: { md: "80vh", sm: "55vh", xs: "95vh" },
+      width: { lg: "75%", md: "75%", sm: "90%", xs: "85%" },
+      height: { lg: "65vh", md: "65vh", sm: "55vh", xs: "95vh" },
       transition: "transform 1s",
       display: "flex",
       justifyContent: "center",
@@ -119,7 +119,7 @@ const BenefitsPlayers = () => {
                 backgroundColor: card.id % 2 === 0 ? colors.TEXT : "white",
               }}
             >
-              <Typography
+              {/* <Typography
                 sx={{
                   color: colors.RED,
                   fontFamily: "'Open Sans', sans-serif",
@@ -134,7 +134,7 @@ const BenefitsPlayers = () => {
                 }}
               >
                 {card.h1}
-              </Typography>
+              </Typography> */}
               <Typography
                 sx={{
                   color: card.id % 2 === 1 ? colors.TEXT : colors.YELLOW,
@@ -168,8 +168,8 @@ const BenefitsPlayers = () => {
                   lineHeight: {
                     "2xl": "2.5rem",
                     xl: "2.5rem",
-                    md: "2.5rem",
-                    sm: "2.2rem",
+                    md: "3rem",
+                    sm: "2.8rem",
                     xs: "3.5rem",
                   },
                 }}

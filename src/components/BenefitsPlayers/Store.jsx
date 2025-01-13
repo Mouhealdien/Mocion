@@ -76,13 +76,13 @@ const Store = () => {
         <Box
           sx={{
             display: "flex",
-            //paddingRight: { lg: "18rem", md: "12rem", sm: "6rem", xs: "1rem" },
+            paddingRight: { lg: "4rem", md: "2rem", sm: "1rem", xs: "1rem" },
             marginLeft: { sm: 0, xs: "0rem" },
             flexDirection: "column",
             rowGap: "1.4rem",
           }}
         >
-          <Box sx={{ paddingY: "1rem", width: { sm: "100%", xs: "80%" } }}>
+          <Box sx={{ paddingY: "1rem", width: { sm: "100%", xs: "100%" } }}>
             <Typography
               sx={{
                 fontFamily: "'Open Sans', sans-serif",
@@ -91,11 +91,11 @@ const Store = () => {
                 fontSize: { md: "3rem", sm: "2.5rem", xs: "2.5rem" },
               }}
             >
-              Now Available For Download In The Store
+              Now Available In App Store
             </Typography>
             <Typography
               sx={{
-                display: { md: "flex", sm: "none", xs: "flex" },
+                display: { md: "flex", sm: "none", xs: "none" },
                 fontFamily: "'Open Sans', sans-serif",
                 color: colors.TEXT,
                 fontWeight: 400,
@@ -107,7 +107,7 @@ const Store = () => {
             </Typography>
             <Typography
               sx={{
-                display: { md: "none", sm: "flex", xs: "none" },
+                display: { md: "none", sm: "flex", xs: "flex" },
                 fontFamily: "'Open Sans', sans-serif",
                 color: colors.TEXT,
                 fontWeight: 400,
@@ -122,13 +122,13 @@ const Store = () => {
             <Box
               component="img"
               src={appstore}
-              sx={{ width: { md: "12rem", xs: "10rem" } }}
+              sx={{ width: { md: "12rem", xs: "12rem" } }}
               onClick={() => console.log("aa")}
             />
             <Box
               component="img"
               src={googleplay}
-              sx={{ width: { md: "12rem", xs: "10rem" } }}
+              sx={{ width: { md: "12rem", xs: "12rem" } }}
               onClick={() => console.log("bb")}
             />
           </Box>

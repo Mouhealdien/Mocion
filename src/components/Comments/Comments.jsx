@@ -6,7 +6,7 @@ import colors from "../../theme/colors";
 
 import avatar from "../../assets/avatar.png";
 
-import star from "../../assets/star.svg";
+import star from "../../assets/redstar.svg";
 
 const cards = [
   {

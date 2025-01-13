@@ -7,15 +7,15 @@ import benefits5 from "../../assets/benefits5.svg";
 const data = [
   {
     id: 1,
-    h1: "Messages",
+    h1: "Booking System",
     content: (
       <>
-        Engage your players and club members effortlessly! Our messaging
-        platform empowers you to connect directly, share updates, and build a
-        vibrant community around your court.
+        Gain complete visibility of your court schedule. This user-friendly
+        interface allows you to easily manage bookings, optimize court usage,
+        and ensure a smooth flow of activities at your facility.
       </>
     ),
-    imgURL: benefits1,
+    imgURL: benefits5,
   },
   {
     id: 2,
@@ -43,6 +43,18 @@ const data = [
   },
   {
     id: 4,
+    h1: "Messages",
+    content: (
+      <>
+        Engage your players and club members effortlessly! Our messaging
+        platform empowers you to connect directly, share updates, and build a
+        vibrant community around your court.
+      </>
+    ),
+    imgURL: benefits1,
+  },
+  {
+    id: 5,
     h1: "Reports",
     content: (
       <>
@@ -53,18 +65,6 @@ const data = [
       </>
     ),
     imgURL: benefits4,
-  },
-  {
-    id: 5,
-    h1: "Bokking System",
-    content: (
-      <>
-        Gain complete visibility of your court schedule. This user-friendly
-        interface allows you to easily manage bookings, optimize court usage,
-        and ensure a smooth flow of activities at your facility.
-      </>
-    ),
-    imgURL: benefits5,
   },
 ];
 

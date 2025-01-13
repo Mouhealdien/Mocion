@@ -2,12 +2,15 @@ import { Box, Typography } from "@mui/material";
 
 import colors from "../../theme/colors";
 
+import { slideInBottom } from "../../theme/animations";
+
 const Experience = () => {
   return (
     <Box
       id="about-us"
       sx={{
-        width: { md: "30%", sm: "30%", xs: "auto" },
+        animation: `${slideInBottom} 1.5s ease-out`,
+        width: { md: "35%", sm: "30%", xs: "auto" },
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",

@@ -38,9 +38,9 @@ const MobilePlan = ({ plan }) => {
           <Box
             onClick={handlePrev}
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               position: "relative",
               left: "0",
               top: "0",
@@ -50,7 +50,7 @@ const MobilePlan = ({ plan }) => {
               width: "6rem",
               height: "6rem",
               zIndex: 3,
-              borderRadius: '5rem'
+              borderRadius: "5rem",
             }}
           >
             <ArrowBackIosIcon sx={{ width: "2rem", height: "2rem" }} />
@@ -80,8 +80,7 @@ const MobilePlan = ({ plan }) => {
             <Typography
               sx={{ fontSize: "4rem", fontWeight: 700, color: colors.TEXT }}
             >
-              <sup>$</sup>
-              {yearlyData[0].price}
+              ${yearlyData[0].price}
             </Typography>
             <Typography
               sx={{
@@ -130,8 +129,7 @@ const MobilePlan = ({ plan }) => {
             <Typography
               sx={{ fontSize: "4rem", fontWeight: 700, color: "white" }}
             >
-              <sup>$</sup>
-              {yearlyData[1].price}
+              ${yearlyData[1].price}
             </Typography>
             <Typography
               sx={{ fontSize: "2rem", color: "white", marginBottom: "25rem" }}
@@ -176,8 +174,7 @@ const MobilePlan = ({ plan }) => {
             <Typography
               sx={{ fontSize: "4rem", fontWeight: 700, color: colors.TEXT }}
             >
-              <sup>$</sup>
-              {yearlyData[2].price}
+              ${yearlyData[2].price}
             </Typography>
             <Typography
               sx={{
@@ -206,9 +203,9 @@ const MobilePlan = ({ plan }) => {
           <Box
             onClick={handleNext}
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               position: "relative",
               left: "0",
               top: "0",
@@ -218,7 +215,7 @@ const MobilePlan = ({ plan }) => {
               width: "6rem",
               height: "6rem",
               zIndex: 3,
-              borderRadius: '5rem'
+              borderRadius: "5rem",
             }}
           >
             <ArrowForwardIosIcon sx={{ width: "2rem", height: "2rem" }} />
@@ -239,9 +236,9 @@ const MobilePlan = ({ plan }) => {
           <Box
             onClick={handlePrev}
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               position: "relative",
               left: "0",
               top: "0",
@@ -251,7 +248,7 @@ const MobilePlan = ({ plan }) => {
               width: "6rem",
               height: "6rem",
               zIndex: 3,
-              borderRadius: '5rem'
+              borderRadius: "5rem",
             }}
           >
             <ArrowBackIosIcon sx={{ width: "2rem", height: "2rem" }} />
@@ -280,8 +277,7 @@ const MobilePlan = ({ plan }) => {
             <Typography
               sx={{ fontSize: "4rem", fontWeight: 700, color: colors.TEXT }}
             >
-              <sup>$</sup>
-              {monthlyData[0].price}
+              ${monthlyData[0].price}
             </Typography>
             <Typography
               sx={{
@@ -330,8 +326,7 @@ const MobilePlan = ({ plan }) => {
             <Typography
               sx={{ fontSize: "4rem", fontWeight: 700, color: "white" }}
             >
-              <sup>$</sup>
-              {monthlyData[1].price}
+              ${monthlyData[1].price}
             </Typography>
             <Typography
               sx={{ fontSize: "2rem", color: "white", marginBottom: "25rem" }}
@@ -376,8 +371,7 @@ const MobilePlan = ({ plan }) => {
             <Typography
               sx={{ fontSize: "4rem", fontWeight: 700, color: colors.TEXT }}
             >
-              <sup>$</sup>
-              {monthlyData[2].price}
+              ${monthlyData[2].price}
             </Typography>
             <Typography
               sx={{
@@ -406,9 +400,9 @@ const MobilePlan = ({ plan }) => {
           <Box
             onClick={handleNext}
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               position: "relative",
               left: "0",
               top: "0",
@@ -418,7 +412,7 @@ const MobilePlan = ({ plan }) => {
               width: "6rem",
               height: "6rem",
               zIndex: 3,
-              borderRadius: '5rem'
+              borderRadius: "5rem",
             }}
           >
             <ArrowForwardIosIcon sx={{ width: "2rem", height: "2rem" }} />

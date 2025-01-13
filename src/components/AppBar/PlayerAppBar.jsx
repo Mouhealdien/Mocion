@@ -41,6 +41,9 @@ export default function PlayerAppBar() {
     if (buttonName === "Club Owner") {
       navigate("/clubowner");
     }
+    if (buttonName === "Log In") {
+      navigate("/login");
+    }
   };
 
   useEffect(() => {

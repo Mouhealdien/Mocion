@@ -26,17 +26,10 @@ const Bottom = () => {
           justifyContent: { xs: "center", sm: "flex-start" },
         }}
       >
-        <a href="">
-          <Box
-            component="img"
-            src={LinkedInIcon}
-            sx={{
-              width: { sm: "3rem", xs: "5rem" },
-              height: { sm: "3rem", xs: "5rem" },
-            }}
-          />
-        </a>
-        <a href="">
+        <a
+          href="https://www.instagram.com/mocion.io?igsh=MWwyZzZqMjZ5dnFiMQ=="
+          target="blank"
+        >
           <Box
             component="img"
             src={InstagramIcon}
@@ -46,10 +39,23 @@ const Bottom = () => {
             }}
           />
         </a>
-        <a href="">
+        <a
+          href="https://www.facebook.com/Mocion.io?mibextid=ZbWKwL"
+          target="blank"
+        >
           <Box
             component="img"
             src={FacebookIcon}
+            sx={{
+              width: { sm: "3rem", xs: "5rem" },
+              height: { sm: "3rem", xs: "5rem" },
+            }}
+          />
+        </a>
+        <a href="https://www.linkedin.com/company/mocion-io/" target="blank">
+          <Box
+            component="img"
+            src={LinkedInIcon}
             sx={{
               width: { sm: "3rem", xs: "5rem" },
               height: { sm: "3rem", xs: "5rem" },

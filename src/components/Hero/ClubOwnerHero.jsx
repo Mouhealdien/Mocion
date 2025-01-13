@@ -43,7 +43,7 @@ export default function ClubOwnerHero() {
               sm: "16rem",
               xs: "80%",
             },
-            zIndex: 1,
+            zIndex: 2,
             top: {
               "2xl": "30rem",
               xl: "35rem",

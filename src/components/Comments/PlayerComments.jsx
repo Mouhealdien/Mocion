@@ -116,7 +116,7 @@ const PlayerComments = () => {
       <Box
         sx={{
           position: "relative",
-          paddingTop: "1rem",
+          paddingTop: "3rem",
         }}
       >
         {cards.map((card, index) => (
@@ -124,7 +124,7 @@ const PlayerComments = () => {
             key={card.id}
             sx={{
               position: "absolute",
-              height: { md: "28rem", sm: "28rem", xs: "28rem" },
+              height: { md: "25rem", sm: "25rem", xs: "25rem" },
               paddingX: "2rem",
               backgroundColor: "#FFFFFF40",
               color: "black",

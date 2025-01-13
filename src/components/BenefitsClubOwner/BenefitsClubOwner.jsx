@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 
 import group from "../../assets/Group.png";
-import frame1 from "../../assets/website1.png";
+import frame1 from "../../assets/website3.png";
 import frame2 from "../../assets/website2.png";
 import reddot from "../../assets/reddot.png";
 
@@ -91,10 +91,11 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: "1.2rem",
+              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.5rem" },
             }}
           >
-            Manage schedules, reservations, and payments effortlessly from one{" "}
+            Manage schedules, reservations, and payments effortlessly from one
+            <br />
             dashboard.
           </Typography>
         </Box>
@@ -128,7 +129,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: "1.2rem",
+              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.5rem" },
             }}
           >
             Offer promotions, peak pricing, or special discounts to attract more{" "}
@@ -139,7 +140,7 @@ const BenefitsClubOwner = () => {
         <Box
           sx={{
             paddingLeft: "5rem",
-            paddingBottom: { md: "35rem", sm: "25rem", xs: "42rem" },
+            paddingBottom: { md: "31rem", sm: "22rem", xs: "42rem" },
           }}
         >
           <Box
@@ -170,7 +171,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: "1.2rem",
+              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.5rem" },
             }}
           >
             Track court usage, bookings, and performance to optimize operations.
@@ -184,7 +185,7 @@ const BenefitsClubOwner = () => {
             width: { xl: "65rem", md: "60rem", sm: "45rem", xs: "45rem" },
             position: "absolute",
             right: { sm: 0, xs: "10rem" },
-            top: { sm: 0, xs: "22rem" },
+            top: { sm: 0, xs: "27rem" },
             zIndex: 2,
           }}
         />
@@ -218,7 +219,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: "1.2rem",
+              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.5rem" },
             }}
           >
             Organize Tournaments, Leagues, And Corporate With Ease.
@@ -286,7 +287,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: "1.2rem",
+              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.5rem" },
             }}
           >
             Keep Players Informed About Schedules, Cancellations, Or Promotions.
@@ -300,7 +301,7 @@ const BenefitsClubOwner = () => {
             width: { xl: "65rem", md: "60rem", sm: "45rem", xs: "45rem" },
             position: "absolute",
             right: { sm: 0, xs: "10rem" },
-            top: { md: "55rem", sm: "45rem", xs: "82rem" },
+            top: { md: "55rem", sm: "45rem", xs: "87rem" },
             zIndex: 2,
           }}
         />
@@ -308,7 +309,7 @@ const BenefitsClubOwner = () => {
         <Box
           sx={{
             position: "absolute",
-            top: { md: "30rem", sm: "25rem", xs: "40rem" },
+            top: { md: "30rem", sm: "25rem", xs: "45rem" },
             display: "flex",
             width: "100%",
             height: { md: "20rem", xs: "16rem" },
@@ -322,7 +323,7 @@ const BenefitsClubOwner = () => {
         <Box
           sx={{
             position: "absolute",
-            top: { md: "85rem", sm: "65rem", xs: "100rem" },
+            top: { md: "85rem", sm: "65rem", xs: "105rem" },
             display: "flex",
             width: "100%",
             height: { md: "20rem", xs: "16rem" },

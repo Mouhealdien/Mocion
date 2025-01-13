@@ -27,9 +27,9 @@ const Plan = () => {
         sx={{
           width: "90%",
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "center",
           flexDirection: { sm: "row", xs: "column" },
-          alignItems: { sm: "center", xs: "flex-start" },
+          alignItems: { sm: "center", xs: "center" },
           rowGap: { sm: "0", xs: "1rem" },
           marginBottom: { sm: "2rem", xs: "3rem" },
         }}
@@ -40,11 +40,12 @@ const Plan = () => {
             fontWeight: 700,
             fontSize: { sm: "4rem", xs: "3rem" },
             color: colors.TEXT,
+            textAlign: "center",
           }}
         >
-          Choose A Plan <br /> That&apos;s Right For You
+          Choose A Plan <br /> That Suits Your Needs
         </Typography>
-        <Typography
+        {/* <Typography
           sx={{
             fontFamily: "'Open Sans', sans-serif !important",
             fontWeight: 400,
@@ -54,7 +55,7 @@ const Plan = () => {
           }}
         >
           Choose A Plan That Works Best For You, Feel Free To Contact Us
-        </Typography>
+        </Typography> */}
       </Box>
 
       <Box
@@ -151,8 +152,7 @@ const Plan = () => {
               <Typography
                 sx={{ fontSize: "3rem", fontWeight: 700, color: colors.TEXT }}
               >
-                <sup>$</sup>
-                {yearlyData[0].price}
+                ${yearlyData[0].price}
               </Typography>
               <Typography
                 sx={{
@@ -201,8 +201,7 @@ const Plan = () => {
               <Typography
                 sx={{ fontSize: "3rem", fontWeight: 700, color: "white" }}
               >
-                <sup>$</sup>
-                {yearlyData[1].price}
+                ${yearlyData[1].price}
               </Typography>
               <Typography
                 sx={{
@@ -251,8 +250,7 @@ const Plan = () => {
               <Typography
                 sx={{ fontSize: "3rem", fontWeight: 700, color: colors.TEXT }}
               >
-                <sup>$</sup>
-                {yearlyData[2].price}
+                ${yearlyData[2].price}
               </Typography>
               <Typography
                 sx={{
@@ -298,7 +296,7 @@ const Plan = () => {
                 gap: "2rem",
                 flexDirection: "column",
                 paddingTop: "4rem",
-                width: { md: "35rem", sm: "30rem" },
+                width: { md: "32.5rem", sm: "30rem" },
                 height: "50rem",
                 background: `linear-gradient(to bottom, ${colors.CORRECT} 2rem, ${colors.GREY} 0)`,
               }}
@@ -314,8 +312,7 @@ const Plan = () => {
               <Typography
                 sx={{ fontSize: "3rem", fontWeight: 700, color: colors.TEXT }}
               >
-                <sup>$</sup>
-                {monthlyData[0].price}
+                ${monthlyData[0].price}
               </Typography>
               <Typography
                 sx={{
@@ -348,7 +345,7 @@ const Plan = () => {
                 gap: "2rem",
                 flexDirection: "column",
                 paddingTop: "4rem",
-                width: { md: "35rem", sm: "30rem" },
+                width: { md: "32.5rem", sm: "30rem" },
                 height: "50rem",
                 background: `linear-gradient(to bottom, ${colors.YELLOW} 2rem, ${colors.TEXT} 0)`,
               }}
@@ -364,8 +361,7 @@ const Plan = () => {
               <Typography
                 sx={{ fontSize: "3rem", fontWeight: 700, color: "white" }}
               >
-                <sup>$</sup>
-                {monthlyData[1].price}
+                ${monthlyData[1].price}
               </Typography>
               <Typography
                 sx={{
@@ -398,7 +394,7 @@ const Plan = () => {
                 gap: "2rem",
                 flexDirection: "column",
                 paddingTop: "4rem",
-                width: { md: "35rem", sm: "30rem" },
+                width: { md: "32.5rem", sm: "30rem" },
                 height: "50rem",
                 background: `linear-gradient(to bottom, ${colors.RED} 2rem, ${colors.GREY} 0)`,
               }}
@@ -414,8 +410,7 @@ const Plan = () => {
               <Typography
                 sx={{ fontSize: "3rem", fontWeight: 700, color: colors.TEXT }}
               >
-                <sup>$</sup>
-                {monthlyData[2].price}
+                ${monthlyData[2].price}
               </Typography>
               <Typography
                 sx={{

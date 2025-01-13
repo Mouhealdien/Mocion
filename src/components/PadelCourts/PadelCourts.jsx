@@ -11,19 +11,19 @@ const PadelCourts = () => {
     const baseStyles = {
       position: "sticky",
       top: "20%",
-      width: { md: "90%", sm: "90%", xs: "85%" },
-      height: { md: "60vh", sm: "55vh", xs: "40vh" },
+      width: { md: "90%", sm: "90%", xs: "90%" },
+      height: { md: "60vh", sm: "55vh", xs: "50vh" },
       transition: "transform 1s",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      marginBottom: id < 5 ? "20rem" : "2rem",
+      marginBottom: id < 5 ? "20rem" : "6rem",
       flexDirection: { sm: "row", xs: "column" },
       backgroundColor: colors.GREY,
       backgroundImage: `url(${personsign})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "right bottom",
-      backgroundSize: { sm: "20%", xs: "0%" },
+      backgroundSize: { sm: "18%", xs: "0%" },
       columnGap: "5%",
       rowGap: "2rem",
     };
@@ -42,10 +42,10 @@ const PadelCourts = () => {
         columnGap: "5rem",
         marginTop: {
           xl: "16rem",
-          lg: "8rem",
+          lg: "12rem",
           md: "8rem",
           sm: "16rem",
-          xs: "8rem",
+          xs: "10rem",
         },
         marginBottom: "2rem",
       }}
@@ -72,7 +72,7 @@ const PadelCourts = () => {
             />
             <Box
               sx={{
-                width: { sm: "40%", xs: "80%" },
+                width: { sm: "35%", xs: "80%" },
                 display: "flex",
                 flexDirection: "column",
                 rowGap: "2rem",
@@ -97,8 +97,10 @@ const PadelCourts = () => {
                   color: colors.TEXT,
                   textTransform: "capitalize",
                   fontWeight: 400,
-                  fontSize: { lg: "1.5rem", sm: "14px", xs: "1.8rem" },
+                  fontSize: { md: "1.5rem", xs: "1.8rem" },
+                  lineHeight: { md: "3rem", xs: "3rem" },
                   fontFamily: "'Open Sans', sans-serif !important",
+                  paddingBottom: { md: "4rem" },
                 }}
               >
                 {item.content}
