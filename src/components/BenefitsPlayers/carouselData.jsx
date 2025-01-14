@@ -176,6 +176,15 @@ const carouselData = [
           your full potential.
           <br />
         </li>
+        <li>
+          <span style={{ fontWeight: 700 }}>Track Your Progress:</span> Monitor
+          your performance and see how you&apos;re improving
+          <br />
+        </li>
+        {/* <li>
+          <span style={{ fontWeight: 700 }}>Stay Updated:</span> Get the latest
+          news, events, and offers from the padel community.
+        </li> */}
       </ul>
     ),
     imgURL: image5,

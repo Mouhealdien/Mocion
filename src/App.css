@@ -25,3 +25,8 @@ h2 {
     opacity: 0;
   }
 }
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/MargotMarker.otf") format("opentype");
+}

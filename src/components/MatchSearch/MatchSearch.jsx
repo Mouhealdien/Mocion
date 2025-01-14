@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
-import poster from "../../assets/poster.png";
+import poster from "../../assets/76.png";
 
 import colors from "../../theme/colors";
 import SearchGrid from "./SearchGrid";

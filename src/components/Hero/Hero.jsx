@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import header from "../../assets/headerimg.png";
+import header from "../../assets/playerbanner.png";
 
 import Experience from "../Experience/Experience";
 

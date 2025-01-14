@@ -54,11 +54,11 @@ const Store = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          columnGap: "5rem",
+          columnGap: { sm: "5rem", xs: "5rem" },
           backgroundColor: colors.YELLOW,
           borderRadius: "2.75rem",
           width: { sm: "65%", xs: "100%" },
-          height: "35rem",
+          height: { sm: "35rem", xs: "50rem" },
         }}
       >
         <Box
@@ -66,8 +66,8 @@ const Store = () => {
           component="img"
           src={hand}
           sx={{
-            width: "fit-content",
-            height: "30rem",
+            width: { md: "fit-content", xs: "26rem" },
+            height: { sm: "30rem", xs: "45rem" },
             paddingLeft: { sm: "2rem", xs: "2rem" },
             paddingTop: "5rem",
             animation: inView ? `${slideInBottom} 1.5s ease-out` : "none",
@@ -82,7 +82,7 @@ const Store = () => {
             rowGap: "1.4rem",
           }}
         >
-          <Box sx={{ paddingY: "1rem", width: { sm: "100%", xs: "100%" } }}>
+          <Box sx={{ paddingY: "1rem", width: { sm: "100%", xs: "90%" } }}>
             <Typography
               sx={{
                 fontFamily: "'Open Sans', sans-serif",
@@ -118,17 +118,25 @@ const Store = () => {
               now!
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", gap: "1.4rem" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
+              flexDirection: { md: "row", xs: "column" },
+              gap: "2rem",
+            }}
+          >
             <Box
               component="img"
               src={appstore}
-              sx={{ width: { md: "12rem", xs: "12rem" } }}
+              sx={{ width: { sm: "12rem", xs: "15rem" } }}
               onClick={() => console.log("aa")}
             />
             <Box
               component="img"
               src={googleplay}
-              sx={{ width: { md: "12rem", xs: "12rem" } }}
+              sx={{ width: { sm: "12rem", xs: "15rem" } }}
               onClick={() => console.log("bb")}
             />
           </Box>
@@ -140,7 +148,7 @@ const Store = () => {
           borderRadius: "2.75rem",
           width: { sm: "33%", xs: "100%" },
           backgroundColor: colors.TEXT,
-          height: "35rem",
+          height: { sm: "35rem", xs: "50rem" },
         }}
       >
         <PlayerComments />

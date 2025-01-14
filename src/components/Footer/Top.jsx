@@ -102,9 +102,9 @@ const Top = () => {
             fontWeight: 700,
             fontFamily: "'Open Sans', sans-serif !important",
             fontSize: { sm: "1.5rem", xs: "2rem" },
-            paddingX: "1.5rem",
-            width: "25rem",
-            height: "4.5rem",
+            paddingX: "0rem",
+            width: { sm: "20rem", xs: "25rem" },
+            height: { sm: "4.5rem", xs: "5rem" },
             borderRadius: "8px",
             textTransform: "none",
           }}
@@ -135,7 +135,7 @@ const Top = () => {
                 backgroundColor: colors.TEXT,
               }}
             >
-              <Box component="img" src={contact} sx={{ width: "12rem" }} />
+              <Box component="img" src={contact} sx={{ width: "9rem" }} />
               <Box
                 onClick={() => setEmailForm(false)}
                 component="img"
@@ -154,7 +154,7 @@ const Top = () => {
               <Box
                 component="img"
                 src={welcome}
-                sx={{ width: "10rem", marginBottom: { sm: "1rem" } }}
+                sx={{ width: "9rem", marginBottom: { xs: "1rem" } }}
               />
             </Box>
             <Box
@@ -213,7 +213,7 @@ const Top = () => {
                 justifyContent: "center",
                 aligItems: "center",
                 marginTop: "1.5rem",
-                height: { md: "15rem", sm: "13rem", xs: "12rem" },
+                height: { md: "17rem", sm: "15rem", xs: "13rem" },
               }}
             >
               <TextField
@@ -222,7 +222,7 @@ const Top = () => {
                 placeholder="Write Your Message"
                 sx={{
                   fontSize: { sm: "1rem", xs: "1.5rem" },
-                  height: { md: "15rem", sm: "13rem", xs: "12rem" },
+                  height: { md: "17rem", sm: "15rem", xs: "13rem" },
                   boxShadow: "4.56px 3.64px 18.22px 0px #00000021",
                   width: "90%",
                   borderRadius: "2rem",

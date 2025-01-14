@@ -104,7 +104,7 @@ const PlayerComments = () => {
     <Box
       sx={{
         position: "relative",
-        height: { sm: "100%", xs: "35rem" },
+        height: { sm: "100%", xs: "48rem" },
         width: "90%",
         margin: "auto",
         overflow: "hidden",
@@ -124,7 +124,7 @@ const PlayerComments = () => {
             key={card.id}
             sx={{
               position: "absolute",
-              height: { md: "25rem", sm: "25rem", xs: "25rem" },
+              height: { md: "25rem", sm: "25rem", xs: "37.5rem" },
               paddingX: "2rem",
               backgroundColor: "#FFFFFF40",
               color: "black",
