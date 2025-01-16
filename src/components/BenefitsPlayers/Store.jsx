@@ -66,7 +66,7 @@ const Store = () => {
           component="img"
           src={hand}
           sx={{
-            width: { md: "fit-content", xs: "26rem" },
+            width: { md: "fit-content", xs: "30rem" },
             height: { sm: "30rem", xs: "45rem" },
             paddingLeft: { sm: "2rem", xs: "2rem" },
             paddingTop: "5rem",

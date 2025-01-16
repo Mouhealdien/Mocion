@@ -1,25 +1,27 @@
 import Box from "@mui/material/Box";
-// import poster from "../../assets/banner/2.png";
-// import net from "../../assets/banner/1.png";
-// import text from "../../assets/banner/3.png";
 
 import banner from "../../assets/65.gif";
+import colors from "../../theme/colors";
 
 export default function ClubOwnerHero() {
   return (
     <Box
       id="home"
       component="img"
-      loading="lazy"
+      autoPlay
       src={banner}
       sx={{
         width: "100%",
-        height: { md: "80vh", sm: "60vh" },
+        height: { lg: "80vh" },
         marginTop: { sm: "8rem", xs: "14rem" },
       }}
     />
   );
 }
+
+// import poster from "../../assets/banner/2.png";
+// import net from "../../assets/banner/1.png";
+// import text from "../../assets/banner/3.png";
 
 // export default function ClubOwnerHero() {
 //   return (
