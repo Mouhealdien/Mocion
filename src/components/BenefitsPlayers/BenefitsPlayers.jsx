@@ -64,6 +64,7 @@ const BenefitsPlayers = () => {
         position: "relative",
         margin: "auto",
         marginBottom: "2rem",
+        marginTop: { sm: "2rem", xs: "4rem" },
       }}
     >
       <Box

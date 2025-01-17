@@ -14,13 +14,13 @@ const BenefitsClubOwner = () => {
         position: "relative",
         marginTop: { "2xl": "0rem", xl: "0rem" },
         height: { lg: "80vh", md: "70vh", sm: "40vh", xs: "45vh" },
-        marginBottom: { md: "32rem", sm: "32rem", xs: "50rem" },
+        marginBottom: { md: "28rem", sm: "32rem", xs: "50rem" },
       }}
     >
       <Box
         sx={{
           display: "flex",
-          marginBottom: "2rem",
+          //marginBottom: "2rem",
           flexDirection: "column",
           paddingLeft: "5rem",
         }}
@@ -39,7 +39,7 @@ const BenefitsClubOwner = () => {
         <Typography
           sx={{
             textWrap: "nowrap",
-            color: colors.TEXT,
+            color: colors.RED,
             fontFamily: "MyCustomFont",
             fontWeight: 400,
             fontSize: { sm: "4.5rem", xs: "4rem" },
@@ -181,7 +181,7 @@ const BenefitsClubOwner = () => {
           component="img"
           src={frame2}
           sx={{
-            width: { xl: "65rem", md: "65rem", sm: "52rem", xs: "52rem" },
+            width: { lg: "58%", md: "54%", sm: "55%", xs: "52rem" },
             height: { xl: "55rem", md: "55rem", sm: "50rem", xs: "40rem" },
             position: "absolute",
             overflow: "hidden",

@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 
 import banner from "../../assets/65.gif";
-import colors from "../../theme/colors";
 
 export default function ClubOwnerHero() {
   return (
@@ -12,7 +11,7 @@ export default function ClubOwnerHero() {
       src={banner}
       sx={{
         width: "100%",
-        height: { lg: "80vh" },
+        height: { lg: "85vh" },
         marginTop: { sm: "8rem", xs: "14rem" },
       }}
     />

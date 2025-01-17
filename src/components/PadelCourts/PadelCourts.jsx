@@ -10,15 +10,17 @@ const PadelCourts = () => {
   const getCardStyles = (index, id) => {
     const baseStyles = {
       position: "sticky",
-      top: { md: "30%", sm: "20%", xs: "30%" },
+      top: { md: "20%", sm: "20%", xs: "20%" },
       width: { md: "90%", sm: "90%", xs: "90%" },
-      height: { md: "60vh", sm: "55vh", xs: "50vh" },
+      height: { md: "60vh", sm: "55vh", xs: "60vh" },
       transition: "transform 1s",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      marginBottom: id < 5 ? "20rem" : "6rem",
-      marginTop: id < 2 ? { md: "2rem", sm: "6rem", xs: "10rem" } : "0rem",
+      marginBottom:
+        id < 5 ? { sm: "6rem", xs: "16rem" } : { sm: "6rem", xs: "16rem" },
+      marginTop:
+        id < 2 ? { lg: "6rem", md: "0rem", sm: "4rem", xs: "10rem" } : "0rem",
       flexDirection: { sm: "row", xs: "column" },
       backgroundColor: colors.GREY,
       backgroundImage: `url(${personsign})`,
@@ -44,8 +46,8 @@ const PadelCourts = () => {
         marginTop: {
           xl: "16rem",
           lg: "12rem",
-          md: "8rem",
-          sm: "8rem",
+          md: "0rem",
+          sm: "0rem",
           xs: "48rem",
         },
         marginBottom: "2rem",

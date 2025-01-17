@@ -38,12 +38,12 @@ const Plan = () => {
           sx={{
             fontFamily: "'Open Sans', sans-serif !important",
             fontWeight: 700,
-            fontSize: { sm: "4rem", xs: "3rem" },
+            fontSize: { md: "4rem", xs: "3rem" },
             color: colors.TEXT,
             textAlign: "center",
           }}
         >
-          Choose A Plan <br /> That Suits Your Needs
+          Choose A Plan That Suits Your Needs
         </Typography>
         {/* <Typography
           sx={{

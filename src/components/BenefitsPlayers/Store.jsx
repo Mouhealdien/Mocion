@@ -47,6 +47,7 @@ const Store = () => {
         borderRadius: "2.75rem",
         rowGap: "2rem",
         width: "90%",
+        marginTop: "2rem",
       }}
     >
       <Box
@@ -66,7 +67,7 @@ const Store = () => {
           component="img"
           src={hand}
           sx={{
-            width: { md: "fit-content", xs: "30rem" },
+            width: { md: "fit-content", xs: "fit-content" },
             height: { sm: "30rem", xs: "45rem" },
             paddingLeft: { sm: "2rem", xs: "2rem" },
             paddingTop: "5rem",
