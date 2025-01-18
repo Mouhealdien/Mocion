@@ -10,10 +10,11 @@ import clip from "../../assets/clip.svg";
 import email from "../../assets/email.svg";
 
 import colors from "../../theme/colors";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { slideInBottom } from "../../theme/animations";
 import { InputAdornment, TextField, useMediaQuery } from "@mui/material";
+import { useLocation } from "react-router-dom";
 
 const Top = () => {
   const [emailForm, setEmailForm] = useState(false);
@@ -22,6 +23,14 @@ const Top = () => {
   const largeScreen = useMediaQuery("(min-width:1200px)");
   const xlargScreen = useMediaQuery("(min-width:1536px)");
   const xxlargScreen = useMediaQuery("(min-width:1920px)");
+
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log(location.hash);
+    if (location.hash === "#contact-us") setEmailForm(true);
+    else setEmailForm(false);
+  }, [location.hash]);
 
   const iconSize = xxlargScreen
     ? "2.5rem"
@@ -37,6 +46,7 @@ const Top = () => {
 
   return (
     <Box
+      id="contact-us"
       sx={{
         display: "flex",
         justifyContent: "space-between",
@@ -213,7 +223,7 @@ const Top = () => {
                 justifyContent: "center",
                 aligItems: "center",
                 marginTop: "1.5rem",
-                height: { md: "17rem", sm: "15rem", xs: "13rem" },
+                height: { md: "17rem", sm: "15rem", xs: "12rem" },
               }}
             >
               <TextField
@@ -222,7 +232,7 @@ const Top = () => {
                 placeholder="Write Your Message"
                 sx={{
                   fontSize: { sm: "1rem", xs: "1.5rem" },
-                  height: { md: "17rem", sm: "15rem", xs: "13rem" },
+                  height: { md: "17rem", sm: "15rem", xs: "12rem" },
                   boxShadow: "4.56px 3.64px 18.22px 0px #00000021",
                   width: "90%",
                   borderRadius: "2rem",

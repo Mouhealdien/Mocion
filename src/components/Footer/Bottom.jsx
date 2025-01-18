@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import FacebookIcon from "../../assets/facebook.svg";
 import LinkedInIcon from "../../assets/linkedin.svg";
 import InstagramIcon from "../../assets/instagram.svg";
+import YoutubeIcon from "../../assets/YoutubeIcon.svg";
 
 import colors from "../../theme/colors";
 
@@ -56,6 +57,16 @@ const Bottom = () => {
           <Box
             component="img"
             src={LinkedInIcon}
+            sx={{
+              width: { sm: "3rem", xs: "5rem" },
+              height: { sm: "3rem", xs: "5rem" },
+            }}
+          />
+        </a>
+        <a href="https://youtube.com/@mocion-io?feature=shared" target="blank">
+          <Box
+            component="img"
+            src={YoutubeIcon}
             sx={{
               width: { sm: "3rem", xs: "5rem" },
               height: { sm: "3rem", xs: "5rem" },

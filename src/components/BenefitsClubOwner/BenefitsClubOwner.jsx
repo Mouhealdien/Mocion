@@ -13,7 +13,7 @@ const BenefitsClubOwner = () => {
       sx={{
         position: "relative",
         marginTop: { "2xl": "0rem", xl: "0rem" },
-        height: { lg: "80vh", md: "70vh", sm: "40vh", xs: "45vh" },
+        height: { lg: "60vh", md: "55vh", sm: "40vh", xs: "45vh" },
         marginBottom: { md: "28rem", sm: "32rem", xs: "50rem" },
       }}
     >
@@ -31,7 +31,7 @@ const BenefitsClubOwner = () => {
             color: colors.TEXT,
             fontFamily: "'Open Sans', sans-serif !imoprtant",
             fontWeight: 700,
-            fontSize: { sm: "5rem", xs: "4rem" },
+            fontSize: { sm: "4rem", xs: "4rem" },
           }}
         >
           Benefits For Court Owner
@@ -72,13 +72,13 @@ const BenefitsClubOwner = () => {
             <Box
               component="img"
               src={reddot}
-              sx={{ width: { sm: "auto", xs: "1rem" } }}
+              sx={{ width: { sm: "1rem", xs: "1rem" } }}
             />
             <Typography
               sx={{
                 color: colors.TEXT,
                 paddingTop: "0.2rem",
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 fontWeight: 700,
                 fontFamily: "'Open Sans', sans-serif !imoprtant",
               }}
@@ -90,7 +90,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.8rem" },
+              fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
             Manage schedules, reservations, and payments effortlessly from one
@@ -111,13 +111,13 @@ const BenefitsClubOwner = () => {
             <Box
               component="img"
               src={reddot}
-              sx={{ width: { sm: "auto", xs: "1rem" } }}
+              sx={{ width: { sm: "1rem", xs: "1rem" } }}
             />
             <Typography
               sx={{
                 color: colors.TEXT,
                 paddingTop: "0.2rem",
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 fontWeight: 700,
               }}
             >
@@ -128,7 +128,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.8rem" },
+              fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
             Offer promotions, peak pricing, or special discounts to attract more{" "}
@@ -153,13 +153,13 @@ const BenefitsClubOwner = () => {
             <Box
               component="img"
               src={reddot}
-              sx={{ width: { sm: "auto", xs: "1rem" } }}
+              sx={{ width: { sm: "1rem", xs: "1rem" } }}
             />
             <Typography
               sx={{
                 color: colors.TEXT,
                 paddingTop: "0.2rem",
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 fontWeight: 700,
               }}
             >
@@ -170,7 +170,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.8rem" },
+              fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
             Track court usage, bookings, and performance to optimize operations.
@@ -181,8 +181,8 @@ const BenefitsClubOwner = () => {
           component="img"
           src={frame2}
           sx={{
-            width: { lg: "58%", md: "54%", sm: "55%", xs: "52rem" },
-            height: { xl: "55rem", md: "55rem", sm: "50rem", xs: "40rem" },
+            width: { lg: "55%", md: "55%", sm: "55%", xs: "52rem" },
+            height: { lg: "50rem", md: "50rem", sm: "50rem", xs: "40rem" },
             position: "absolute",
             overflow: "hidden",
             left: { sm: "100%", xs: "50%" },
@@ -208,13 +208,13 @@ const BenefitsClubOwner = () => {
             <Box
               component="img"
               src={reddot}
-              sx={{ width: { sm: "auto", xs: "1rem" } }}
+              sx={{ width: { sm: "1rem", xs: "1rem" } }}
             />
             <Typography
               sx={{
                 color: colors.TEXT,
                 paddingTop: "0.2rem",
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 fontWeight: 700,
               }}
             >
@@ -225,7 +225,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.8rem" },
+              fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
             Organize Tournaments, Leagues, And Corporate With Ease.
@@ -244,14 +244,14 @@ const BenefitsClubOwner = () => {
             <Box
               component="img"
               src={reddot}
-              sx={{ width: { sm: "auto", xs: "1rem" } }}
+              sx={{ width: { sm: "1rem", xs: "1rem" } }}
             />
             <Typography
               sx={{
                 color: colors.TEXT,
                 textWrap: { sm: "nowrap", xs: "wrap" },
                 paddingTop: "0.2rem",
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 fontWeight: 700,
               }}
             >
@@ -262,7 +262,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.8rem" },
+              fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
             Secure And Automated Payment System To Streamline Collections.
@@ -281,14 +281,14 @@ const BenefitsClubOwner = () => {
             <Box
               component="img"
               src={reddot}
-              sx={{ width: { sm: "auto", xs: "1rem" } }}
+              sx={{ width: { sm: "1rem", xs: "1rem" } }}
             />
             <Typography
               sx={{
                 color: colors.TEXT,
                 textWrap: { sm: "nowrap", xs: "wrap" },
                 paddingTop: "0.2rem",
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 fontWeight: 700,
               }}
             >
@@ -299,7 +299,7 @@ const BenefitsClubOwner = () => {
             sx={{
               color: colors.TEXT,
               textWrap: { sm: "nowrap", xs: "wrap" },
-              fontSize: { md: "1.5rem", sm: "1.2rem", xs: "1.8rem" },
+              fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
             Keep Players Informed About Schedules, Cancellations, Or Promotions.
@@ -321,15 +321,15 @@ const BenefitsClubOwner = () => {
         <Box
           sx={{
             position: "absolute",
-            top: { md: "45rem", sm: "40rem", xs: "75rem" },
+            top: { md: "38rem", sm: "40rem", xs: "75rem" },
             display: "flex",
             width: "100%",
-            height: { md: "20rem", xs: "16rem" },
+            height: { md: "16rem", xs: "16rem" },
             backgroundColor: colors.TEXT,
             backgroundImage: `url(${group})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "left top",
-            backgroundSize: { md: "13rem", sm: "10%", xs: "13%" },
+            backgroundSize: { md: "10rem", sm: "10%", xs: "13%" },
           }}
         />
         {/* <Box

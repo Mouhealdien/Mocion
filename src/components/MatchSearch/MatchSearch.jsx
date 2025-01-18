@@ -15,7 +15,7 @@ const MatchSearch = () => {
         alignItems: "center",
         flexDirection: { sm: "row", xs: "column" },
         backgroundColor: colors.TEXT,
-        columnGap: { md: "10rem", sm: "0rem" },
+        columnGap: { sm: "10rem", xs: "0rem" },
         paddingX: { sm: "0px", xs: "40px" },
       }}
     >
@@ -25,10 +25,10 @@ const MatchSearch = () => {
         alt="poster"
         sx={{
           width: {
-            "2xl": "615px",
-            lg: "460px",
-            md: "400px",
-            sm: "342px",
+            // "2xl": "615px",
+            // lg: "460px",
+            // md: "400px",
+            sm: "30rem",
             xs: "280px",
           },
           //height: { "2xl": "100%", md: "100%", sm: "100%", xs: "100%" },
