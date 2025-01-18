@@ -68,6 +68,7 @@ export default function ClubOwnerAppBar() {
     { name: "Booking System", href: "booking-system" },
     { name: "Plans", href: "plans" },
     { name: "Testimonials", href: "testimonials" },
+    { name: "Contact Us", href: "contact-us" },
   ];
 
   const navMobileItems = [
@@ -76,6 +77,7 @@ export default function ClubOwnerAppBar() {
     { name: "Booking System", href: "booking-system" },
     { name: "Plans", href: "plans" },
     { name: "Testimonials", href: "testimonials" },
+    { name: "Contact Us", href: "contact-us" },
     { name: "Player", href: "player" },
     { name: "Club Owner", href: "club-owner" },
   ];
@@ -101,7 +103,7 @@ export default function ClubOwnerAppBar() {
               "2xl": "124px",
               xl: "80px",
               lg: "64px",
-              md: "32px",
+              md: "10px",
               sm: "24px",
             },
           }}

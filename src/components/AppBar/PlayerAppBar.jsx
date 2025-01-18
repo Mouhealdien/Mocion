@@ -68,7 +68,7 @@ export default function PlayerAppBar() {
     { name: "About Us", href: "about-us" },
     { name: "Play Match", href: "play-match" },
     { name: "Benefits", href: "benefits" },
-    { name: "APP", href: "app" },
+    { name: "App", href: "app" },
     { name: "Contact Us", href: "contact-us" },
   ];
   const navMobileItems = [
