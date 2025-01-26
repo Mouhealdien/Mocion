@@ -79,19 +79,14 @@ const carouselData = [
     h2: "Mocion hooks you up with:",
     text: (
       <ul>
-        <li>
-          <span style={{ fontWeight: 700 }}>Skilled Padel Coaches:</span> to
-          level up your game with the best! <br />
-        </li>
-        <li>
+        {/* <li>
           <span style={{ fontWeight: 700 }}>Skilled Padel Coaches:</span> to Get
           tailored instruction for maximum impact.
           <br />
-        </li>
+        </li> */}
         <li>
-          <span style={{ fontWeight: 700 }}>Skilled Padel Coaches:</span> to
-          book lessons that fit your busy life.
-          <br />
+          <span style={{ fontWeight: 700 }}>Convenient Coaching:</span> to book
+          lessons that fit your busy life. <br />
         </li>
         <li>
           <span style={{ fontWeight: 700 }}>Train on Your Terms:</span> Flexible
@@ -100,18 +95,18 @@ const carouselData = [
         </li>
         <li>
           <span style={{ fontWeight: 700 }}>
-            Everything you need to improve:
+            Everything you need to improve,
           </span>{" "}
           from private coaching to full academy booking.
           <br />
         </li>
-        {/* <li>
+        <li>
           <span style={{ fontWeight: 700 }}>
             Your padel journey starts here:
           </span>{" "}
           access expert coaching at your fingertips.
           <br />
-        </li> */}
+        </li>
       </ul>
     ),
     imgURL: image3,
@@ -163,28 +158,28 @@ const carouselData = [
           your perfect match.
           <br />
         </li>
-        <li>
+        {/* <li>
           <span style={{ fontWeight: 700 }}>Discover New Courts:</span> Explore
           the best places to play. <br />
-        </li>
+        </li> */}
         <li>
           <span style={{ fontWeight: 700 }}>Connect, Compete, Community: </span>
           Join the action! <br />
         </li>
-        <li>
+        {/* <li>
           <span style={{ fontWeight: 700 }}>Improve Your Skills:</span> Unleash
           your full potential.
           <br />
-        </li>
+        </li> */}
         <li>
           <span style={{ fontWeight: 700 }}>Track Your Progress:</span> Monitor
           your performance and see how you&apos;re improving
           <br />
         </li>
-        {/* <li>
+        <li>
           <span style={{ fontWeight: 700 }}>Stay Updated:</span> Get the latest
           news, events, and offers from the padel community.
-        </li> */}
+        </li>
       </ul>
     ),
     imgURL: image5,

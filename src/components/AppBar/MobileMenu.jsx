@@ -93,7 +93,7 @@ const MobileMenu = ({
 
       <Box sx={{ display: { xs: "flex", sm: "none", md: "none" } }}>
         <Button
-          onClick={() => navigate("/login")}
+          onClick={() => navigate("/loginandregister")}
           fullWidth
           sx={{
             paddingX: "16px",

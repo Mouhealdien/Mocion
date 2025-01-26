@@ -42,7 +42,7 @@ export default function PlayerAppBar() {
       navigate("/clubowner");
     }
     if (buttonName === "Log In") {
-      navigate("/login");
+      navigate("/loginandregister");
     }
   };
 

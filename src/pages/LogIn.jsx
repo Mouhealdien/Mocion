@@ -1,8 +1,22 @@
-import { Box, Button, Typography } from "@mui/material";
+import { useState } from "react";
+import {
+  Box,
+  Button,
+  Checkbox,
+  FormControlLabel,
+  InputAdornment,
+  Link,
+  TextField,
+  Typography,
+} from "@mui/material";
 
 import login from "../assets/login.png";
 import logo from "../assets/LOGO.png";
-import { useState } from "react";
+import eyeclosed from "../assets/EYECLOSED.svg";
+import or from "../assets/or.svg";
+import facebook_logo from "../assets/facebook_logo.svg";
+import google_logo from "../assets/google_logo.svg";
+import apple_logo from "../assets/apple_logo.svg";
 
 import colors from "../theme/colors";
 
@@ -12,10 +26,13 @@ const LogIn = () => {
     setActiveButton(buttonName);
   };
 
-  const [activeButton2, setActiveButton2] = useState("privacy");
-  const handleButtonClick2 = (buttonName) => {
-    setActiveButton2(buttonName);
+  const [checked, setChecked] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setChecked(event.target.checked);
   };
+
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <Box
@@ -30,6 +47,7 @@ const LogIn = () => {
         src={login}
         alt="login"
         sx={{
+          height: "100%",
           display: { lg: "flex", xs: "none" },
         }}
       />
@@ -51,7 +69,7 @@ const LogIn = () => {
             rowGap: "1.5rem",
             borderRadius: "3rem",
             width: { lg: "50rem", xs: "60rem" },
-            height: "65%",
+            height: { lg: "55rem", md: "60rem", xs: "65rem" },
             boxShadow: " 0px 3.65px 18.26px 0px #72727233",
           }}
         >
@@ -61,61 +79,175 @@ const LogIn = () => {
             sx={{
               fontFamily: "'Open Sans', sans-serif !important",
               textAlign: "center",
-              fontSize: { sm: "2.5rem", xs: "2.5rem" },
+              fontSize: { sm: "1.5rem", xs: "2rem" },
               color: colors.TEXT,
             }}
           >
-            Welcome to Mocion
+            Enter Your Information To Get Started
           </Typography>
           <Box
             sx={{
-              fontFamily: "'Open Sans', sans-serif !important",
               display: "flex",
-              columnGap: "4rem",
+              flexDirection: "column",
+              justifyContent: "Center",
+              alignItems: "center",
+              fontFamily: "'Open Sans', sans-serif !important",
+              rowGap: "1rem",
               marginTop: "2rem",
-              marginBottom: "2rem",
+              width: "100%",
             }}
           >
-            <Button
-              variant="text"
+            <TextField
+              type="text"
+              placeholder="Enter Your Email"
+              variant="outlined"
+              fullWidth
               sx={{
-                color: activeButton === "register" ? colors.RED : colors.TEXT,
-                fontWeight: 400,
-                fontSize: { lg: "1.5rem", md: "1.5rem", xs: "2.2rem" },
-                textTransform: "none",
-                height: "32px",
-                padding: "0",
-                textWrap: "nowrap",
-                fontFamily: "'Open Sans', sans-serif !important",
-                minWidth: "unset",
-                transition: "none",
-                backgroundColor: "transparent",
+                width: "80%",
+                "& .MuiOutlinedInput-root": {
+                  borderRadius: "4px",
+                  backgroundColor: "#F3F3F3",
+                  border: `1px solid ${colors.GREY}`,
+                },
+                "& .MuiOutlinedInput-root:hover": {
+                  borderColor: colors.GREY,
+                },
+                "& .MuiOutlinedInput-notchedOutline": {
+                  border: "none",
+                },
+                "& .MuiOutlinedInput-root.Mui-focused": {
+                  border: `1px solid ${colors.GREY}}`,
+                  boxShadow: "none",
+                },
               }}
-              disableRipple
-              onClick={() => handleButtonClick("register")}
-            >
-              Register
-            </Button>
-            <Button
-              variant="text"
+              InputProps={{
+                style: {
+                  color: colors.TEXT,
+                  fontSize: "1.2rem",
+                  fontFamily: "'Open Sans', sans-serif",
+                  fontWeight: 400,
+                },
+                // endAdornment: icon && (
+                //   <InputAdornment position="end">
+                //     <Box
+                //       component="img"
+                //       src={icon}
+                //       alt="icon"
+                //       style={{
+                //         height: iconSize,
+                //         width: iconSize,
+                //       }}
+                //     />
+                //   </InputAdornment>
+                // ),
+              }}
+            />
+            <TextField
+              type={showPassword ? "text" : "password"}
+              placeholder="Enter Your Password"
+              variant="outlined"
+              fullWidth
               sx={{
-                color: activeButton === "login" ? colors.RED : colors.TEXT,
-                fontWeight: 400,
-                fontSize: { lg: "1.5rem", md: "1.5rem", xs: "2.2rem" },
-                textTransform: "none",
-                height: "32px",
-                padding: "0",
-                textWrap: "nowrap",
-                fontFamily: "'Open Sans', sans-serif !important",
-                minWidth: "unset",
-                transition: "none",
-                backgroundColor: "transparent",
+                width: "80%",
+                "& .MuiOutlinedInput-root": {
+                  borderRadius: "4px",
+                  backgroundColor: "#F3F3F3",
+                  border: `1px solid ${colors.GREY}`,
+                },
+                "& .MuiOutlinedInput-root:hover": {
+                  borderColor: colors.GREY,
+                },
+                "& .MuiOutlinedInput-notchedOutline": {
+                  border: "none",
+                },
+                "& .MuiOutlinedInput-root.Mui-focused": {
+                  border: `1px solid ${colors.GREY}}`,
+                  boxShadow: "none",
+                },
               }}
-              disableRipple
-              onClick={() => handleButtonClick("login")}
+              InputProps={{
+                style: {
+                  color: colors.TEXT,
+                  fontSize: "1.2rem",
+                  fontFamily: "'Open Sans', sans-serif",
+                  fontWeight: 400,
+                },
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <Box
+                      onClick={() =>
+                        setShowPassword((showPassword) => !showPassword)
+                      }
+                      component="img"
+                      src={eyeclosed}
+                      alt="icon"
+                      style={{
+                        height: "3rem",
+                        width: "3rem",
+                        cursor: "pointer",
+                      }}
+                    />
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </Box>
+          <Box
+            sx={{
+              width: "80%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={checked}
+                  onChange={handleCheckboxChange}
+                  sx={{
+                    color: colors.TEXT,
+                    "&.Mui-checked": {
+                      color: colors.TEXT,
+                    },
+                  }}
+                />
+              }
+              label="Remember me"
+              sx={{
+                ".MuiTypography-root": {
+                  fontSize: "1.5rem",
+                  fontWeight: 400,
+                  fontFamily: "'Open Sans', sans-serif !important",
+                  color: colors.TEXT,
+                },
+              }}
+            />
+            <Link
+              sx={{
+                fontSize: "1.5rem",
+                fontWeight: 400,
+                fontFamily: "'Open Sans', sans-serif !important",
+                color: colors.RED,
+                textDecoration: "none",
+                cursor: "pointer",
+              }}
             >
-              Log In
-            </Button>
+              Forgot Email?
+            </Link>
+            <Link
+              sx={{
+                fontSize: "1.5rem",
+                fontWeight: 400,
+                fontFamily: "'Open Sans', sans-serif !important",
+                color: colors.RED,
+                textDecoration: "none",
+                cursor: "pointer",
+              }}
+            >
+              Forgot Password?
+            </Link>
           </Box>
           <Button
             variant="text"
@@ -130,100 +262,80 @@ const LogIn = () => {
               minWidth: "unset",
               transition: "none",
               width: "80%",
-              height: { md: "4rem", xs: "6rem" },
+              height: { md: "6rem", xs: "6rem" },
               backgroundColor: colors.TEXT,
-              borderRadius: "2rem",
+              borderRadius: "5rem",
             }}
             disableRipple
           >
-            Player {activeButton === "register" && "Registeration"}
-            {activeButton === "login" && "Log In"}
+            Next
           </Button>
-          <Button
-            variant="text"
+          <Box
+            sx={{ width: "80%", marginTop: "1rem" }}
+            component="img"
+            src={or}
+          />
+          <Box
             sx={{
-              marginBottom: "2rem",
-              color: colors.TEXT,
-              fontWeight: 400,
-              fontSize: { lg: "1.5rem", md: "1.5rem", xs: "2.2rem" },
-              textTransform: "none",
-              padding: "0",
-              textWrap: "nowrap",
-              fontFamily: "'Open Sans', sans-serif !important",
-              minWidth: "unset",
-              transition: "none",
               width: "80%",
-              height: { md: "4rem", xs: "6rem" },
-              backgroundColor: "white",
-              border: `1px solid ${colors.TEXT}`,
-              borderRadius: "2rem",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginTop: "1rem",
             }}
-            disableRipple
           >
-            Club Owner {activeButton === "register" && "Registeration"}{" "}
-            {activeButton === "login" && "Log In"}
-          </Button>
-          <Box sx={{ display: "flex", columnGap: "5rem" }}>
-            <Button
-              variant="text"
+            <Box
               sx={{
-                color: activeButton2 === "privacy" ? colors.RED : colors.TEXT,
-                fontWeight: 400,
-                fontSize: { lg: "1.5rem", md: "1.5rem", xs: "2.2rem" },
-                textTransform: "none",
-                height: "32px",
-                padding: "0",
-                textWrap: "nowrap",
-                fontFamily: "'Open Sans', sans-serif !important",
-                minWidth: "unset",
-                transition: "none",
-                backgroundColor: "transparent",
+                border: `1px solid ${colors.color02}`,
+                width: "8rem",
+                borderRadius: "1rem",
+                height: "6rem",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
-              disableRipple
-              onClick={() => handleButtonClick2("privacy")}
             >
-              Privacy Policy
-            </Button>
-            <Button
-              variant="text"
+              <Box
+                component="img"
+                src={google_logo}
+                sx={{ width: "3rem", borderRadius: "50vh", cursor: "pointer" }}
+              />
+            </Box>
+            <Box
               sx={{
-                color: activeButton2 === "terms" ? colors.RED : colors.TEXT,
-                fontWeight: 400,
-                fontSize: { lg: "1.5rem", md: "1.5rem", xs: "2.2rem" },
-                textTransform: "none",
-                height: "32px",
-                padding: "0",
-                textWrap: "nowrap",
-                fontFamily: "'Open Sans', sans-serif !important",
-                minWidth: "unset",
-                transition: "none",
-                backgroundColor: "transparent",
+                border: `1px solid ${colors.color02}`,
+                width: "8rem",
+                borderRadius: "1rem",
+                height: "6rem",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
-              disableRipple
-              onClick={() => handleButtonClick2("terms")}
             >
-              Terms
-            </Button>
-            <Button
-              variant="text"
+              <Box
+                component="img"
+                src={apple_logo}
+                sx={{ width: "3rem", borderRadius: "50vh", cursor: "pointer" }}
+              />
+            </Box>
+            <Box
               sx={{
-                color: activeButton2 === "help" ? colors.RED : colors.TEXT,
-                fontWeight: 400,
-                fontSize: { lg: "1.5rem", md: "1.5rem", xs: "2.2rem" },
-                textTransform: "none",
-                height: "32px",
-                padding: "0",
-                textWrap: "nowrap",
-                fontFamily: "'Open Sans', sans-serif !important",
-                minWidth: "unset",
-                transition: "none",
-                backgroundColor: "transparent",
+                border: `1px solid ${colors.color02}`,
+                width: "8rem",
+                borderRadius: "1rem",
+                height: "6rem",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
-              disableRipple
-              onClick={() => handleButtonClick2("help")}
             >
-              Help
-            </Button>
+              <Box
+                component="img"
+                src={facebook_logo}
+                sx={{ width: "3rem", borderRadius: "50vh", cursor: "pointer" }}
+              />
+            </Box>
           </Box>
         </Box>
       </Box>
