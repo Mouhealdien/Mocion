@@ -158,6 +158,7 @@ const Top = () => {
                   sm: "45rem",
                   xs: "50rem",
                 },
+                left: { md: "70rem", sm: "50rem", xs: "2rem" },
                 borderRadius: "1rem",
                 backgroundColor: "white",
                 position: "absolute",
@@ -443,7 +444,7 @@ const Top = () => {
                 backgroundColor: "white",
                 position: "absolute",
                 bottom: "10rem",
-                right: { sm: "2rem", xs: "40rem" },
+                right: { sm: "2rem", xs: "17rem" },
                 animation: emailForm
                   ? `${slideInBottom} 1.5s ease-out`
                   : "none",

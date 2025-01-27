@@ -14,7 +14,7 @@ const BenefitsClubOwner = () => {
         position: "relative",
         marginTop: { "2xl": "0rem", xl: "0rem" },
         height: { lg: "60vh", md: "55vh", sm: "40vh", xs: "45vh" },
-        marginBottom: { md: "28rem", sm: "32rem", xs: "50rem" },
+        marginBottom: { lg: "33rem", md: "28rem", sm: "34rem", xs: "50rem" },
       }}
     >
       <Box
@@ -83,7 +83,7 @@ const BenefitsClubOwner = () => {
                 fontFamily: "'Open Sans', sans-serif !imoprtant",
               }}
             >
-              Comprehensive Booking System
+              Boost Visibility
             </Typography>
           </Box>
           <Typography
@@ -93,9 +93,7 @@ const BenefitsClubOwner = () => {
               fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
-            Manage schedules, reservations, and payments effortlessly from one
-            <br />
-            dashboard.
+            Get discovered by thousands of local players on our app.
           </Typography>
         </Box>
 
@@ -121,7 +119,7 @@ const BenefitsClubOwner = () => {
                 fontWeight: 700,
               }}
             >
-              Dynamic Pricing Options
+              Endless Vibes in Courts
             </Typography>
           </Box>
           <Typography
@@ -131,8 +129,7 @@ const BenefitsClubOwner = () => {
               fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
-            Offer promotions, peak pricing, or special discounts to attract more{" "}
-            <br /> players.
+            Keep your courts busy and energetic.
           </Typography>
         </Box>
 
@@ -163,7 +160,7 @@ const BenefitsClubOwner = () => {
                 fontWeight: 700,
               }}
             >
-              Player Insights and Analytics
+              Effortless Scheduling
             </Typography>
           </Box>
           <Typography
@@ -173,7 +170,9 @@ const BenefitsClubOwner = () => {
               fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
-            Track court usage, bookings, and performance to optimize operations.
+            Easily Manage bookings, Academies, Events and payments from one{" "}
+            <br />
+            screen.
           </Typography>
         </Box>
 
@@ -187,7 +186,7 @@ const BenefitsClubOwner = () => {
             overflow: "hidden",
             left: { sm: "100%", xs: "50%" },
             transform: { sm: "translateX(-100%)", xs: "translateX(-50%)" },
-            top: { sm: 0, xs: "48rem" },
+            top: { sm: 0, xs: "53rem" },
             zIndex: 2,
             borderTopLeftRadius: "3rem",
             borderBottomLeftRadius: "3rem",
@@ -218,7 +217,7 @@ const BenefitsClubOwner = () => {
                 fontWeight: 700,
               }}
             >
-              Event Management Tools
+              Smart Pricing
             </Typography>
           </Box>
           <Typography
@@ -228,7 +227,7 @@ const BenefitsClubOwner = () => {
               fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
-            Organize Tournaments, Leagues, And Corporate With Ease.
+            Optimize revenue through dynamic rates and tailored memberships.
           </Typography>
         </Box>
 
@@ -255,7 +254,7 @@ const BenefitsClubOwner = () => {
                 fontWeight: 700,
               }}
             >
-              Payment Processing
+              Data-Driven Decisions
             </Typography>
           </Box>
           <Typography
@@ -265,7 +264,9 @@ const BenefitsClubOwner = () => {
               fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
-            Secure And Automated Payment System To Streamline Collections.
+            Track court occupancy, player behavior to optimize operations and{" "}
+            <br />
+            boost profits.
           </Typography>
         </Box>
 
@@ -292,7 +293,7 @@ const BenefitsClubOwner = () => {
                 fontWeight: 700,
               }}
             >
-              Push Notifications
+              Host Epic Events
             </Typography>
           </Box>
           <Typography
@@ -302,7 +303,46 @@ const BenefitsClubOwner = () => {
               fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
             }}
           >
-            Keep Players Informed About Schedules, Cancellations, Or Promotions.
+            Organize tournaments, leagues, and corporate events. Grow your{" "}
+            <br />
+            coaching coverage from one screen.
+          </Typography>
+        </Box>
+
+        <Box sx={{ paddingLeft: "5rem" }}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "row",
+              columnGap: "0.5rem",
+            }}
+          >
+            <Box
+              component="img"
+              src={reddot}
+              sx={{ width: { sm: "1rem", xs: "1rem" } }}
+            />
+            <Typography
+              sx={{
+                color: colors.TEXT,
+                textWrap: { sm: "nowrap", xs: "wrap" },
+                paddingTop: "0.2rem",
+                fontSize: "1.5rem",
+                fontWeight: 700,
+              }}
+            >
+              Seamless Operations
+            </Typography>
+          </Box>
+          <Typography
+            sx={{
+              color: colors.TEXT,
+              textWrap: { sm: "nowrap", xs: "wrap" },
+              fontSize: { md: "1.3rem", sm: "1.2rem", xs: "1.8rem" },
+            }}
+          >
+            Automate your facility’s operations, finance, and HR with no hassle.
           </Typography>
         </Box>
 
@@ -321,7 +361,7 @@ const BenefitsClubOwner = () => {
         <Box
           sx={{
             position: "absolute",
-            top: { md: "38rem", sm: "40rem", xs: "75rem" },
+            top: { md: "45rem", sm: "43rem", xs: "80rem" },
             display: "flex",
             width: "100%",
             height: { md: "16rem", xs: "16rem" },

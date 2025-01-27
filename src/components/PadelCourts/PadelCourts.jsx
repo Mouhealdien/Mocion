@@ -20,7 +20,7 @@ const PadelCourts = () => {
       marginBottom:
         id < 5 ? { sm: "6rem", xs: "16rem" } : { sm: "6rem", xs: "16rem" },
       marginTop:
-        id < 2 ? { lg: "6rem", md: "0rem", sm: "4rem", xs: "10rem" } : "0rem",
+        id < 2 ? { lg: "8rem", md: "6rem", sm: "4rem", xs: "10rem" } : "0rem",
       flexDirection: { sm: "row", xs: "column" },
       backgroundColor: colors.GREY,
       backgroundImage: `url(${personsign})`,

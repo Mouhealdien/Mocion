@@ -79,20 +79,20 @@ const carouselData = [
     h2: "Mocion hooks you up with:",
     text: (
       <ul>
-        {/* <li>
-          <span style={{ fontWeight: 700 }}>Skilled Padel Coaches:</span> to Get
-          tailored instruction for maximum impact.
+        <li>
+          <span style={{ fontWeight: 700 }}>Skilled Padel Coaches:</span> to
+          level up your game with the best!
           <br />
-        </li> */}
+        </li>
         <li>
           <span style={{ fontWeight: 700 }}>Convenient Coaching:</span> to book
           lessons that fit your busy life. <br />
         </li>
-        <li>
+        {/* <li>
           <span style={{ fontWeight: 700 }}>Train on Your Terms:</span> Flexible
           scheduling to fit your needs.
           <br />
-        </li>
+        </li> */}
         <li>
           <span style={{ fontWeight: 700 }}>
             Everything you need to improve,
@@ -153,27 +153,30 @@ const carouselData = [
     h2: "Elevate Your Padel Game with Mocion:",
     text: (
       <ul>
-        <li>
-          <span style={{ fontWeight: 700 }}>Connect with Players:</span> Find
-          your perfect match.
-          <br />
-        </li>
         {/* <li>
           <span style={{ fontWeight: 700 }}>Discover New Courts:</span> Explore
           the best places to play. <br />
         </li> */}
-        <li>
+        {/* <li>
           <span style={{ fontWeight: 700 }}>Connect, Compete, Community: </span>
           Join the action! <br />
-        </li>
-        {/* <li>
+        </li> */}
+        <li>
           <span style={{ fontWeight: 700 }}>Improve Your Skills:</span> Unleash
           your full potential.
           <br />
-        </li> */}
+        </li>
         <li>
           <span style={{ fontWeight: 700 }}>Track Your Progress:</span> Monitor
-          your performance and see how you&apos;re improving
+          your performance and see how you&apos;re improving.
+          <br />
+        </li>
+        <li>
+          <span style={{ fontWeight: 700 }}>
+            Track And Control Your Progress:
+          </span>{" "}
+          Monitor your performance for every match, tournament & league you
+          particpate in!
           <br />
         </li>
         <li>
