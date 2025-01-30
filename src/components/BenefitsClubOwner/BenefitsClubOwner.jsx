@@ -14,7 +14,7 @@ const BenefitsClubOwner = () => {
         position: "relative",
         marginTop: { "2xl": "0rem", xl: "0rem" },
         height: { lg: "60vh", md: "55vh", sm: "40vh", xs: "45vh" },
-        marginBottom: { lg: "33rem", md: "28rem", sm: "34rem", xs: "50rem" },
+        marginBottom: { lg: "33rem", md: "28rem", sm: "30rem", xs: "40rem" },
       }}
     >
       <Box
@@ -42,10 +42,10 @@ const BenefitsClubOwner = () => {
             color: colors.RED,
             fontFamily: "MyCustomFont",
             fontWeight: 400,
-            fontSize: { sm: "4.5rem", xs: "4rem" },
+            fontSize: { sm: "4rem", xs: "3.5rem" },
           }}
         >
-          Mocion has powerful features for court owners.
+          GAME-CHANGE IN PADEL FACILITY MANAGEMNET
         </Typography>
       </Box>
 

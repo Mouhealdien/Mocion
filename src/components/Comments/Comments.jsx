@@ -5,7 +5,6 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import colors from "../../theme/colors";
 
 import avatar from "../../assets/avatar.png";
-
 import star from "../../assets/redstar.svg";
 
 const cards = [

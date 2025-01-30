@@ -1,10 +1,12 @@
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
-import hamburgerIcon from "../../assets/hamburgerIcon.png";
+
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
+
+import hamburgerIcon from "../../assets/hamburgerIcon.png";
 
 import colors from "../../theme/colors";
 import { useNavigate } from "react-router-dom";

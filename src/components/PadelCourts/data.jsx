@@ -3,68 +3,81 @@ import benefits2 from "../../assets/benefits2.svg";
 import benefits3 from "../../assets/benefits3.svg";
 import benefits4 from "../../assets/benefits4.svg";
 import benefits5 from "../../assets/benefits5.svg";
+import benefits6 from "../../assets/benefits6.svg";
 
 const data = [
   {
     id: 1,
-    h1: "Booking System",
+    h1: "Efficient Scheduling: Take Full Control of Your Court",
     content: (
       <>
-        Gain complete visibility of your court schedule. This user-friendly
-        interface allows you to easily manage bookings, optimize court usage,
-        and ensure a smooth flow of activities at your facility.
+        Experience a smooth and efficient booking process, with a complete
+        overview of your court availability. So you will be able to create,
+        edit, confirm bookings & coaching sessions in a snap!
       </>
     ),
     imgURL: benefits5,
   },
   {
     id: 2,
-    h1: "Leagues",
+    h1: "Create Leagues & Tournament in a Smash",
     content: (
       <>
-        Streamline league management with our intuitive platform. Easily create,
-        schedule, and track all your tournaments and competitions, ensuring a
-        smooth and enjoyable experience for your players.
+        Simplify leagues & tournament management from start to finish. Set
+        schedules, take control of your event, keep the energy high for your
+        players and let Mocion run it for you.
       </>
     ),
     imgURL: benefits2,
   },
   {
     id: 3,
-    h1: "Academy",
+    h1: "Grow Your Academy with State of Art Features",
     content: (
       <>
-        Streamline your academy operations with this centralized platform.
-        Manage coaching schedules, track player progress, and ensure a top-notch
-        experience for your players.
+        Elevate your academy to a new dimension with cutting-edge features
+        designed to grow your community, streamline operations, and enhance
+        every player&apos;s experience.
       </>
     ),
     imgURL: benefits3,
   },
   {
     id: 4,
-    h1: "Messages",
+    h1: "Connect. Engage. Thrive.",
     content: (
       <>
-        Engage your players and club members effortlessly! Our messaging
-        platform empowers you to connect directly, share updates, and build a
-        vibrant community around your court.
+        Sustain Long Lasting Relations: Foster a sense of community and build
+        stronger relationships with your players and community
       </>
     ),
     imgURL: benefits1,
   },
   {
     id: 5,
-    h1: "Reports",
+    h1: "Dashboard & Reports",
+    h2: "Maximize Revenue with Mocion 3D: Data-Driven Decisions.",
     content: (
       <>
-        Track your court&apos;s performance at a glance! See your total income,
-        occupancy rates, and booking trends in real-time. Optimize your schedule
-        and boost revenue with actionable insights using our heatmap and
-        comprehensive dashboard.
+        Optimize your schedule and pricing strategies based on actionable
+        insights. By overseeing your revenue streams, occupancy rates, and
+        booking trends in real-time.
       </>
     ),
     imgURL: benefits4,
+  },
+  {
+    id: 6,
+    h1: "Social & Corporate Events",
+    h2: "Create Events That Leave a Lasting Impact – Keep Your Audience Buzzing Long After!",
+    content: (
+      <>
+        Mocion believes that events should captivate and inspire, will be
+        thrilled to create moments for your audience will remember and talk
+        about for days to come.
+      </>
+    ),
+    imgURL: benefits6,
   },
 ];
 

@@ -3,12 +3,12 @@ import { useState, useEffect, useRef } from "react";
 import { Box, Typography } from "@mui/material";
 
 import colors from "../../theme/colors";
+import { slideInBottom } from "../../theme/animations";
 
 import hand from "../../assets/hand.png";
 import googleplay from "../../assets/googleplay.png";
 import appstore from "../../assets/Appstore.png";
 
-import { slideInBottom } from "../../theme/animations";
 import PlayerComments from "../Comments/PlayerComments";
 
 const Store = () => {

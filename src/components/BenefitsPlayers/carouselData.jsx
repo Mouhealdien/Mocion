@@ -136,13 +136,13 @@ const carouselData = [
           Make memories on and off the court.
           <br />
         </li>
-        {/* <li>
+        <li>
           <span style={{ fontWeight: 700 }}>
             Experience Padel Like Never Before:
           </span>{" "}
           Dive into a world of padel excitement
           <br />
-        </li> */}
+        </li>
       </ul>
     ),
     imgURL: image4,

@@ -20,7 +20,7 @@ const PadelCourts = () => {
       marginBottom:
         id < 5 ? { sm: "6rem", xs: "16rem" } : { sm: "6rem", xs: "16rem" },
       marginTop:
-        id < 2 ? { lg: "8rem", md: "6rem", sm: "4rem", xs: "10rem" } : "0rem",
+        id < 2 ? { lg: "8rem", md: "7rem", sm: "8rem", xs: "12rem" } : "0rem",
       flexDirection: { sm: "row", xs: "column" },
       backgroundColor: colors.GREY,
       backgroundImage: `url(${personsign})`,
@@ -88,19 +88,40 @@ const PadelCourts = () => {
                   //textWrap: 'nowrap',
                   textTransform: "capitalize",
                   fontWeight: 700,
-                  fontSize: { lg: "5rem", md: "4rem", sm: "3rem", xs: "4rem" },
+                  fontSize: {
+                    lg: "3rem",
+                    md: "2.5rem",
+                    sm: "3rem",
+                    xs: "4rem",
+                  },
                   fontFamily: "'Open Sans', sans-serif !important",
                 }}
               >
                 {item.h1}
               </Typography>
+              {item.h2 && (
+                <Typography
+                  variant="h3"
+                  sx={{
+                    color: colors.TEXT,
+                    //textWrap: 'nowrap',
+                    textTransform: "capitalize",
+                    fontWeight: 700,
+                    fontSize: { sm: "1.5rem", xs: "1.8rem" },
+                    lineHeight: { md: "3rem", xs: "3rem" },
+                    fontFamily: "'Open Sans', sans-serif !important",
+                  }}
+                >
+                  {item.h2}
+                </Typography>
+              )}
               <Typography
                 variant="h4"
                 sx={{
                   color: colors.TEXT,
                   textTransform: "capitalize",
                   fontWeight: 400,
-                  fontSize: { md: "1.5rem", xs: "1.8rem" },
+                  fontSize: { sm: "1.5rem", xs: "1.8rem" },
                   lineHeight: { md: "3rem", xs: "3rem" },
                   fontFamily: "'Open Sans', sans-serif !important",
                   paddingBottom: { md: "4rem" },
